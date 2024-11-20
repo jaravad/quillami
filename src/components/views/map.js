@@ -31,7 +31,7 @@ const MapView = () => {
       <h4 className="text-4xl font-bold text-center mb-11">Mapa</h4>
       <APIProvider apiKey="AIzaSyAg0qkRxv-OzxOdkmRZzFGWfeDPhIBgpwA">
         <Map
-          defaultZoom={14.82}
+          defaultZoom={13.5}
           defaultCenter={{ lat: 10.990433,lng: -74.7850689 }}
           gestureHandling="cooperative"
           className="h-[500px] lg:h-[700px]"
