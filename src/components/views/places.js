@@ -28,7 +28,7 @@ const Places = () => {
   }, [])
 
   return (
-    <section className="py-20 opacity-0" id="places" ref={boxRef}>
+    <section className="py-24 opacity-0" id="lugares" ref={boxRef}>
       <div className="container mx-auto px-4">
         <h2 className="font-medium text-4xl text-center mb-8">
           Lugares con alma

@@ -30,13 +30,13 @@ const OurName = () => {
 
   return (
     <section
-      id="aboutUs"
+      id="nosotros"
       className="py-16 opacity-0 px-4 md:px-0 bg-yellow-50"
       ref={boxRef}
     >
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
-          <div className="px-4">
+          <div className="px-4 mb-8 md:mb-0 flex flex-col">
             <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl mb-6">
               ¿Por qué
               <br />
@@ -46,15 +46,15 @@ const OurName = () => {
               <span className="text-yellow-400">LLA</span>
               <span className="text-green-700">MI</span>?
             </h1>
-            <p className="text-md md:text-xl mb-10">
+            <p className="text-md md:text-xl mb-8">
               ¡Barranquilla es Quillami, papá! 🌞
             </p>
-            <Link
-              href="/"
-              className="px-6 py-3 bg-black hover:bg-black/75 transition-colors duration-200 text-white font-medium rounded-3xl"
+            <a
+              href="#reels"
+              className="px-6 self-center md:self-start py-3 bg-black hover:bg-black/75 transition-colors duration-200 text-white font-medium rounded-3xl"
             >
               Ver Reels
-            </Link>
+            </a>
           </div>
           <div className="w-full md:w-2/4 md:px-8">
             <img
