@@ -1,0 +1,42 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../public/images/pexels-yulieth-andrea-327516250-13808386_edited.jpg);
+  animation-name: fade;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.logo {
+  animation-name: appear;
+  animation-delay: 300ms;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.place-card:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes fade {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 100;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
