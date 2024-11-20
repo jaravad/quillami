@@ -43,7 +43,7 @@ function Navbar() {
         </div>
         <div className="md:hidden flex items-center justify-center">
           <button
-            className="text-neutral-500 hover:text-neutral-900 focus:outline-none"
+            className="text-neutral-500 border border-neutral-200 hover:text-neutral-900 hover:bg-neutral-200 rounded-md p-2 transition-colors duration-200"
             onClick={toggleMenu}
           >
             <svg
@@ -70,8 +70,8 @@ function Navbar() {
           isOpen ? 'block' : 'hidden'
         } fixed top-0 left-0 w-full z-10 bg-white border-b border-gray-300 shadow-lg`}
       >
-        <div className="container mx-auto py-8">
-          <button className="text-neutral-500 hover:text-neutral-900 mx-4" onClick={toggleMenu}>
+        <div className="container mx-auto py-5 flex flex-col">
+          <button className="text-neutral-500 border border-neutral-200 hover:text-neutral-900 p-1 self-end hover:bg-neutral-200 rounded-md transition-colors duration-200 mx-4" onClick={toggleMenu}>
             {/* close icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"

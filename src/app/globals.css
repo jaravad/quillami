@@ -9,7 +9,7 @@
 }
 
 .mobile-navbar-link {
-  @apply text-neutral-600 px-4 font-medium block py-3 hover:text-neutral-900 hover:bg-neutral-100 transition-colors duration-200;
+  @apply text-neutral-600 px-4 text-center font-medium block py-2.5 border-b border-neutral-100 hover:text-neutral-900 hover:bg-neutral-100 transition-colors duration-200;
 }
 
 :root {
