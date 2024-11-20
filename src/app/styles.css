@@ -18,6 +18,11 @@
   transform: scale(1.1);
 }
 
+.spotify {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../public/images/marimondas.jpg);
+}
+
 @keyframes fade {
   from {
     transform: scale(1.1);

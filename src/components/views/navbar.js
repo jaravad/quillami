@@ -34,6 +34,9 @@ function Navbar() {
           <a href="#xPosts" className="navbar-link">
             X
           </a>
+          <a href="#playlist" className="navbar-link">
+            Playlist
+          </a>
           <a href="#mapa" className="navbar-link">
             Mapa
           </a>
@@ -139,6 +142,15 @@ function Navbar() {
                 className="mobile-navbar-link"
               >
                 X
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={toggleMenu}
+                href="#playlist"
+                className="mobile-navbar-link"
+              >
+                Playlist
               </a>
             </li>
             <li>

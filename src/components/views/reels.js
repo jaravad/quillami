@@ -55,7 +55,7 @@ const Reels = () => {
   }, [currentPage])
 
   return (
-    <section className="pt-20 opacity-0 bg-green-50" id="reels" ref={boxRef}>
+    <section className="pt-20 opacity-0 bg-gray-100" id="reels" ref={boxRef}>
       <div className="container mx-auto px-4 flex flex-col items-center">
         <Link
           href="https://www.instagram.com/somosquillami24/"

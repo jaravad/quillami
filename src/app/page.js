@@ -8,6 +8,7 @@ import Reels from '@/components/views/reels'
 import XPosts from '@/components/views/x-posts'
 import Map from '@/components/views/map'
 import Footer from '@/components/views/footer'
+import Spotify from '@/components/views/spotify'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Mission />
       <Reels/>
       <XPosts />
+      <Spotify />
       <Map/>
       <Footer />
     </>
