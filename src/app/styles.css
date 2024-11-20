@@ -1,6 +1,5 @@
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../../public/images/sombrero.jpg);
+  background-image: url(../../public/images/sombrero.jpg);
   animation-name: fade;
   animation-duration: 350ms;
   animation-fill-mode: forwards;

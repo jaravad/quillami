@@ -28,8 +28,8 @@ const Places = () => {
   }, [])
 
   return (
-    <section className="py-20" id="places">
-      <div className="container mx-auto opacity-0 px-4" ref={boxRef}>
+    <section className="py-20 opacity-0" id="places" ref={boxRef}>
+      <div className="container mx-auto px-4">
         <h2 className="font-medium text-4xl text-center mb-8">
           Lugares con alma
         </h2>
