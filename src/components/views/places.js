@@ -37,7 +37,7 @@ const Places = () => {
           <PlaceCard
             title="Casa del Carnaval"
             subtitle='"El Corazón del Carnaval"'
-            url="https://www.instagram.com/reel/DA9Ne9KS8am/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            url="https://www.instagram.com/reel/DA9Ne9KS8am"
             imageSrc="images/sillas.jpg"
           />
           <PlaceCard
@@ -50,7 +50,7 @@ const Places = () => {
           <PlaceCard
             title="Catedral Metropolitana"
             subtitle='"Fe y Belleza en el Centro"'
-            url="https://www.instagram.com/reel/DA6-yDss93I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            url="https://www.instagram.com/reel/DA6-yDss93I"
             imageSrc="images/catedral.jpeg"
             bgOpacity={45}
           />

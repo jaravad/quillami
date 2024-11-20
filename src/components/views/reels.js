@@ -1,4 +1,4 @@
-import {gsap} from 'gsap'
+import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
@@ -22,7 +22,6 @@ const posts = [
 ]
 
 const Reels = () => {
-  
   const [currentPage, setCurrentPage] = useState(0)
   const scrollRef = useRef(null)
 
@@ -56,16 +55,22 @@ const Reels = () => {
   }, [currentPage])
 
   return (
-    <section className="pt-20 opacity-0 bg-green-50" id='reels' ref={boxRef}>
-      <div className="container mx-auto px-4">
-        <img src="/images/icons/ig.svg" className="block mx-auto mb-2" alt="" />
+    <section className="pt-20 opacity-0 bg-green-50" id="reels" ref={boxRef}>
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <Link
+          href="https://www.instagram.com/somosquillami24/"
+          target="_blank"
+          className="inline-block mx-auto mb-2 hover:scale-105 transition-transform duration-200"
+        >
+          <img src="/images/icons/ig.svg" alt="" />
+        </Link>
         <h5 className="text-xl text-center mb-2">Síguenos en Instagram</h5>
         <Link
           href="https://www.instagram.com/somosquillami24/"
           className=" block mb-8 hover:underline"
           target="_blank"
         >
-          <h4 className="text-lg md:text-4xl font-semibold text-center ">
+          <h4 className="text-2xl md:text-4xl font-semibold text-center ">
             @SomosQuillami24
           </h4>
         </Link>

@@ -50,15 +50,21 @@ const XPosts = () => {
 
   return (
     <section className="pt-20 opacity-0" id="xPosts" ref={boxRef}>
-      <div className="container mx-auto px-4">
-        <img src="/images/icons/x.svg" className="block mx-auto mb-2" alt="" />
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <Link
+          href="https://x.com/QuillaMi22"
+          target="_blank"
+          className="inline-block mx-auto mb-2 hover:scale-105 transition-transform duration-200"
+        >
+          <img src="/images/icons/x.svg" alt="" />
+        </Link>
         <h5 className="text-xl text-center mb-2">Síguenos en X</h5>
         <Link
           href="https://x.com/QuillaMi22"
           className=" block mb-8 hover:underline"
           target="_blank"
         >
-          <h4 className="text-lg md:text-4xl font-semibold text-center ">
+          <h4 className="text-2xl md:text-4xl font-semibold text-center ">
             @QuillaMi22
           </h4>
         </Link>
