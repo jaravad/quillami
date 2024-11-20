@@ -11,8 +11,8 @@ function Navbar() {
     <nav className="shadow-lg fixed top-0 w-full bg-white z-10">
       <div className="container mx-auto px-4 py-5 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#inicio" className="text-neutral-800 font-bold">
-            Quillami
+          <a href="/" className="text-neutral-800 font-bold">
+          <img src="images/logo.png" className="h-6" alt="Quillami Logo" />
           </a>
         </div>
         <div className="hidden md:flex items-center">

@@ -1,12 +1,11 @@
-import {gsap} from 'gsap'
+import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 
 const XEmbed = dynamic(
-  () =>
-    import('react-social-media-embed').then((module) => module.XEmbed),
+  () => import('react-social-media-embed').then((module) => module.XEmbed),
   { ssr: false }
 )
 
@@ -14,11 +13,9 @@ const posts = [
   'https://x.com/QuillaMi22/status/1858980247133450573',
   'https://x.com/QuillaMi22/status/1858977444264636841',
   'https://x.com/QuillaMi22/status/1858975498271068297',
-  
 ]
 
 const XPosts = () => {
-  
   const [currentPage, setCurrentPage] = useState(0)
   const scrollRef = useRef(null)
 
@@ -46,13 +43,13 @@ const XPosts = () => {
   }, [])
 
   useEffect(() => {
-    if (scrollRef.current) {
+    if (scrollRef.current && currentPage > 0) {
       scrollRef.current.scrollIntoView()
     }
   }, [currentPage])
 
   return (
-    <section className="pt-20 opacity-0" id='xPosts' ref={boxRef}>
+    <section className="pt-20 opacity-0" id="xPosts" ref={boxRef}>
       <div className="container mx-auto px-4">
         <img src="/images/icons/x.svg" className="block mx-auto mb-2" alt="" />
         <h5 className="text-xl text-center mb-2">Síguenos en X</h5>

@@ -28,7 +28,7 @@ const places = [
 const MapView = () => {
   return (
     <section className="py-20 bg-gray-100" id="mapa">
-      <h4 className="text-4xl font-bold text-center mb-10">Mapa</h4>
+      <h4 className="text-4xl font-bold text-center mb-11">Mapa</h4>
       <APIProvider apiKey="AIzaSyAg0qkRxv-OzxOdkmRZzFGWfeDPhIBgpwA">
         <Map
           defaultZoom={14.82}
