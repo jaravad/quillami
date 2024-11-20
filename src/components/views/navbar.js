@@ -28,6 +28,9 @@ function Navbar() {
           <a href="#mission" className="text-gray-500 hover:text-gray-900">
             Misión
           </a>
+          <a href="#reels" className="text-gray-500 hover:text-gray-900">
+            Reels
+          </a>
         </div>
         <div className="md:hidden">
           <button
@@ -54,7 +57,7 @@ function Navbar() {
       <div
         className={`md:hidden ${
           isOpen ? 'block' : 'hidden'
-        } fixed top-0 left-0 w-full h-full z-10`}
+        } fixed top-0 left-0 w-full z-10 bg-white border-b border-gray-300 shadow-lg`}
       >
         <div className="container mx-auto px-4 py-8">
           <button className="text-white text-right" onClick={toggleMenu}>
