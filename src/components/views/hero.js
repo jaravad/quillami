@@ -35,8 +35,8 @@ const Hero = () => {
         </a>
       </div>
       <div className="absolute py-2.5 w-full bottom-0 bg-yellow-100">
-        <blockquote className="px-4 mx-auto container text-center italic max-w-2xl">
-          "Barranquilla en su punto, tierra de la cumbia y el sabor, donde se goza la vida con el alma y el corazón." "Barranquilla en su punto - <strong>Joe Arroyo</strong>"
+        <blockquote className="px-4 mx-auto text-sm container text-center italic max-w-2xl">
+          "Barranquilla en su punto, tierra de la cumbia y el sabor, donde se goza la vida con el alma y el corazón." "Barranquilla en su punto" - <strong>Joe Arroyo</strong>"
         </blockquote>
       </div>
     </div>
