@@ -5,6 +5,7 @@ import Navbar from '@/components/views/navbar'
 import OurName from '@/components/views/our-name'
 import Places from '@/components/views/places'
 import Reels from '@/components/views/reels'
+import XPosts from '@/components/views/x-posts'
 import Map from '@/components/views/map'
 import Footer from '@/components/views/footer'
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Places />
       <Mission />
       <Reels/>
+      <XPosts />
       <Map/>
       <Footer />
     </>

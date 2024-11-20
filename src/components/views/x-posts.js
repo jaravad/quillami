@@ -4,24 +4,20 @@ import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 
-const InstagramEmbed = dynamic(
+const XEmbed = dynamic(
   () =>
-    import('react-social-media-embed').then((module) => module.InstagramEmbed),
+    import('react-social-media-embed').then((module) => module.XEmbed),
   { ssr: false }
 )
 
 const posts = [
-  'https://www.instagram.com/reel/DCaS03eO23_',
-  'https://www.instagram.com/reel/DCVW4DfNLvk',
-  'https://www.instagram.com/reel/DA9Ne9KS8am',
-  'https://www.instagram.com/reel/DA7Gup0s_kr',
-  'https://www.instagram.com/reel/DA7AdmEMTOV',
-  'https://www.instagram.com/reel/DA6_rh3s5Rr',
-  'https://www.instagram.com/reel/DA6-yDss93I',
-  'https://www.instagram.com/reel/DA6-OcHs3qz',
+  'https://x.com/QuillaMi22/status/1858980247133450573',
+  'https://x.com/QuillaMi22/status/1858977444264636841',
+  'https://x.com/QuillaMi22/status/1858975498271068297',
+  
 ]
 
-const Reels = () => {
+const XPosts = () => {
   
   const [currentPage, setCurrentPage] = useState(0)
   const scrollRef = useRef(null)
@@ -56,22 +52,22 @@ const Reels = () => {
   }, [currentPage])
 
   return (
-    <section className="pt-20 opacity-0 bg-green-50" id='reels' ref={boxRef}>
+    <section className="pt-20 opacity-0" id='xPosts' ref={boxRef}>
       <div className="container mx-auto px-4">
-        <img src="/images/icons/ig.svg" className="block mx-auto mb-2" alt="" />
-        <h5 className="text-xl text-center mb-2">Síguenos en Instagram</h5>
+        <img src="/images/icons/x.svg" className="block mx-auto mb-2" alt="" />
+        <h5 className="text-xl text-center mb-2">Síguenos en X</h5>
         <Link
-          href="https://www.instagram.com/somosquillami24/"
+          href="https://x.com/QuillaMi22"
           className=" block mb-8 hover:underline"
           target="_blank"
         >
           <h4 className="text-lg md:text-4xl font-semibold text-center ">
-            @SomosQuillami24
+            @QuillaMi22
           </h4>
         </Link>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {posts.slice(0, (currentPage + 1) * 3).map((post, index) => (
-            <InstagramEmbed url={post} key={index} className="w-full" />
+            <XEmbed url={post} key={index} className="w-full" />
           ))}
         </div>
         {posts.length > (currentPage + 1) * 3 && (
@@ -91,4 +87,4 @@ const Reels = () => {
   )
 }
 
-export default Reels
+export default XPosts

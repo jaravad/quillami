@@ -15,29 +15,32 @@ function Navbar() {
             Quillami
           </a>
         </div>
-        <div className="hidden md:flex items-center space-x-4">
-          <a href="#inicio" className="text-gray-500 hover:text-gray-900">
+        <div className="hidden md:flex items-center">
+          <a href="#inicio" className="navbar-link">
             Inicio
           </a>
-          <a href="#nosotros" className="text-gray-500 hover:text-gray-900">
+          <a href="#nosotros" className="navbar-link">
             Nosotros
           </a>
-          <a href="#lugares" className="text-gray-500 hover:text-gray-900">
+          <a href="#lugares" className="navbar-link">
             Lugares
           </a>
-          <a href="#mission" className="text-gray-500 hover:text-gray-900">
+          <a href="#mission" className="navbar-link">
             Misión
           </a>
-          <a href="#reels" className="text-gray-500 hover:text-gray-900">
+          <a href="#reels" className="navbar-link">
             Reels
           </a>
-          <a href="#mapa" className="text-gray-500 hover:text-gray-900">
+          <a href="#xPosts" className="navbar-link">
+            X
+          </a>
+          <a href="#mapa" className="navbar-link">
             Mapa
           </a>
         </div>
         <div className="md:hidden flex items-center justify-center">
           <button
-            className="text-gray-500 hover:text-gray-900 focus:outline-none"
+            className="text-neutral-500 hover:text-neutral-900 focus:outline-none"
             onClick={toggleMenu}
           >
             <svg
@@ -64,8 +67,8 @@ function Navbar() {
           isOpen ? 'block' : 'hidden'
         } fixed top-0 left-0 w-full z-10 bg-white border-b border-gray-300 shadow-lg`}
       >
-        <div className="container mx-auto px-4 py-8">
-          <button className="text-gray-600" onClick={toggleMenu}>
+        <div className="container mx-auto py-8">
+          <button className="text-neutral-500 hover:text-neutral-900 mx-4" onClick={toggleMenu}>
             {/* close icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +91,7 @@ function Navbar() {
               <a
                 onClick={toggleMenu}
                 href="#inicio"
-                className="text-gray-600 block py-3 hover:text-gray-900"
+                className="mobile-navbar-link"
               >
                 Inicio
               </a>
@@ -97,7 +100,7 @@ function Navbar() {
               <a
                 onClick={toggleMenu}
                 href="#nosotros"
-                className="text-gray-600 block py-3 hover:text-gray-900"
+                className="mobile-navbar-link"
               >
                 Nosotros
               </a>
@@ -106,7 +109,7 @@ function Navbar() {
               <a
                 onClick={toggleMenu}
                 href="#lugares"
-                className="text-gray-600 block py-3 hover:text-gray-900"
+                className="mobile-navbar-link"
               >
                 Lugares
               </a>
@@ -115,7 +118,7 @@ function Navbar() {
               <a
                 onClick={toggleMenu}
                 href="#mission"
-                className="text-gray-600 block py-3 hover:text-gray-900"
+                className="mobile-navbar-link"
               >
                 Misión
               </a>
@@ -124,7 +127,7 @@ function Navbar() {
               <a
                 onClick={toggleMenu}
                 href="#reels"
-                className="text-gray-600 block py-3 hover:text-gray-900"
+                className="mobile-navbar-link"
               >
                 Reels
               </a>
@@ -132,8 +135,17 @@ function Navbar() {
             <li>
               <a
                 onClick={toggleMenu}
+                href="#xPosts"
+                className="mobile-navbar-link"
+              >
+                X
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={toggleMenu}
                 href="#mapa"
-                className="text-gray-600 block py-3 hover:text-gray-900"
+                className="mobile-navbar-link"
               >
                 Mapa
               </a>

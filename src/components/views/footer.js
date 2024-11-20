@@ -40,6 +40,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
+              <a href="#XPosts" className="hover:underline me-4 md:me-6">
+                X
+              </a>
+            </li>
+            <li>
               <a href="#mapa" className="hover:underline me-4 md:me-6">
                 Mapa
               </a>
