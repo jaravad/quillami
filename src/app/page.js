@@ -6,6 +6,7 @@ import OurName from '@/components/views/our-name'
 import Places from '@/components/views/places'
 import Reels from '@/components/views/reels'
 import Map from '@/components/views/map'
+import Footer from '@/components/views/footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Mission />
       <Reels/>
       <Map/>
+      <Footer />
     </>
   )
 }

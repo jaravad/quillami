@@ -65,7 +65,7 @@ const Reels = () => {
           className=" block mb-8 hover:underline"
           target="_blank"
         >
-          <h4 className="text-4xl font-semibold text-center ">
+          <h4 className="text-lg md:text-4xl font-semibold text-center ">
             @SomosQuillami24
           </h4>
         </Link>
