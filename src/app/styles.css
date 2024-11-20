@@ -1,6 +1,6 @@
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../../public/images/pexels-yulieth-andrea-327516250-13808386_edited.jpg);
+    url(../../public/images/sombrero.jpg);
   animation-name: fade;
   animation-duration: 350ms;
   animation-fill-mode: forwards;

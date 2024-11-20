@@ -43,7 +43,7 @@ const Places = () => {
           <PlaceCard
             title="¡Quillami te llama!"
             subtitle='"Vale mía, Barranquilla está a un click!"'
-            url="#"
+            url="https://x.com/QuillaMi22"
             imageSrc="images/logo-yellow.jpeg"
             bgOpacity={45}
           />
