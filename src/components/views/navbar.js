@@ -31,6 +31,9 @@ function Navbar() {
           <a href="#reels" className="text-gray-500 hover:text-gray-900">
             Reels
           </a>
+          <a href="#mapa" className="text-gray-500 hover:text-gray-900">
+            Mapa
+          </a>
         </div>
         <div className="md:hidden flex items-center justify-center">
           <button
@@ -124,6 +127,15 @@ function Navbar() {
                 className="text-gray-600 block py-3 hover:text-gray-900"
               >
                 Reels
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={toggleMenu}
+                href="#mapa"
+                className="text-gray-600 block py-3 hover:text-gray-900"
+              >
+                Mapa
               </a>
             </li>
           </ul>
