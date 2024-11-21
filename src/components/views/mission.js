@@ -30,10 +30,10 @@ const Mission = () => {
   return (
     <section className="py-20 bg-orange-50 opacity-0" id="mission" ref={boxRef}>
       <div className="container mx-auto p-4" >
-        <h3 className="text-4xl md:text-6xl font-bold text-center mb-10">
+        <h3 className="text-5xl md:text-6xl font-bold text-center mb-10">
           La Misión de Quillami
         </h3>
-        <p className="text-xl max-w-3xl text-center mx-auto mb-8">
+        <p className="text-sm md:text-xl max-w-3xl text-center mx-auto mb-8">
           Quillami tiene como misión mostrar a Barranquilla desde una mirada
           auténtica y vibrante, destacando su cultura, historia y esencia única
           a través de una plataforma transmedia creada por estudiantes de quinto
