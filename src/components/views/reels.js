@@ -50,9 +50,7 @@ const Reels = () => {
 
   useEffect(() => {
     if (scrollRef.current && currentPage > 0) {
-      setInterval(() => {
-        scrollRef.current.scrollIntoView()
-      }, 200)
+      scrollRef.current.scrollIntoView()
     }
   }, [currentPage])
 
