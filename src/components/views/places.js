@@ -36,20 +36,20 @@ const Places = () => {
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <PlaceCard
             title="Casa del Carnaval"
-            subtitle='"El Corazón del Carnaval"'
+            subtitle="El Corazón del Carnaval"
             url="https://www.instagram.com/reel/DA9Ne9KS8am"
             imageSrc="images/sillas.jpg"
           />
           <PlaceCard
             title="¡Quillami te llama!"
-            subtitle='"Vale mía, Barranquilla está a un click!"'
+            subtitle="Vale mía, Barranquilla está a un click!"
             url="https://x.com/QuillaMi22"
             imageSrc="images/logo-yellow.jpeg"
             bgOpacity={45}
           />
           <PlaceCard
             title="Catedral Metropolitana"
-            subtitle='"Fe y Belleza en el Centro"'
+            subtitle="Fe y Belleza en el Centro"
             url="https://www.instagram.com/reel/DA6-yDss93I"
             imageSrc="images/catedral.jpeg"
             bgOpacity={45}
