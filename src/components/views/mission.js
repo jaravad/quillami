@@ -37,7 +37,7 @@ const Mission = () => {
           Quillami tiene como misión mostrar a Barranquilla desde una mirada
           auténtica y vibrante, destacando su cultura, historia y esencia única
           a través de una plataforma transmedia creada por estudiantes de quinto
-          semestre de Comunicación Social de la Universidad Minuto de Dios."
+          semestre de Comunicación Social de la Universidad Minuto de Dios.
         </p>
 
         <div className="flex flex-wrap">
