@@ -50,7 +50,7 @@ const Reels = () => {
 
   useEffect(() => {
     if (scrollRef.current && currentPage > 0) {
-      scrollRef.current.scrollIntoView()
+      scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' })
     }
   }, [currentPage])
 
